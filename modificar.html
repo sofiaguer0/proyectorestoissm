@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modi.css">
+    <title>Menú del Restaurante</title>
+</head>
+<body>
+    <h1>Menú del Restaurante</h1>
+
+    <h2>Platos Disponibles</h2>
+    <ul id="menu-list">
+        <li><strong>Nombre del Plato 1:</strong> Descripción del Plato 1 - Precio: $X</li>
+        <li><strong>Nombre del Plato 2:</strong> Descripción del Plato 2 - Precio: $X</li>
+        <li><strong>Nombre del Plato 3:</strong> Descripción del Plato 3 - Precio: $X</li>
+        <!-- Aquí puedes incluir más platos del menú con su descripción -->
+    </ul>
+
+    <h2>Agregar Nuevo Plato</h2>
+    <form id="add-form">
+        <label for="nombre-plato">Nombre del Plato:</label><br>
+        <input type="text" id="nombre-plato" name="nombre-plato"><br>
+        <label for="descripcion-plato">Descripción:</label><br>
+        <textarea id="descripcion-plato" name="descripcion-plato"></textarea><br>
+        <label for="precio-plato">Precio:</label><br>
+        <input type="number" id="precio-plato" name="precio-plato"><br><br>
+        <button type="submit">Agregar Plato</button>
+    </form>
+
+    <h2>Modificar o Eliminar Plato</h2>
+    <form id="modify-form">
+        <label for="select-plato">Seleccionar Plato:</label><br>
+        <select id="select-plato" name="select-plato">
+            <option value="1">Nombre del Plato 1</option>
+            <option value="2">Nombre del Plato 2</option>
+            <option value="3">Nombre del Plato 3</option>
+            <!-- Aquí puedes incluir más opciones con los nombres de los platos -->
+        </select><br><br>
+        <label for="nuevo-nombre-plato">Nuevo Nombre del Plato:</label><br>
+        <input type="text" id="nuevo-nombre-plato" name="nuevo-nombre-plato"><br>
+        <label for="nueva-descripcion-plato">Nueva Descripción:</label><br>
+        <textarea id="nueva-descripcion-plato" name="nueva-descripcion-plato"></textarea><br>
+        <label for="nuevo-precio-plato">Nuevo Precio:</label><br>
+        <input type="number" id="nuevo-precio-plato" name="nuevo-precio-plato"><br><br>
+        <button type="submit">Modificar Plato</button>
+        <button type="button" id="delete-btn">Eliminar Plato</button>
+    </form>
+
+    <script>
+        // Aquí podrías agregar scripts para manejar la lógica de agregar, modificar y eliminar platos del menú
+    </script>
+</body>
+</html>

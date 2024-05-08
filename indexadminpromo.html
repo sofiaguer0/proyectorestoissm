@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Promociones</title>
+    <link rel="stylesheet" href=".css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Administrador de Promociones</h1>
+    </header>
+
+    <main>
+        <section id="crear-promocion">
+            <h2>Crear Promoción</h2>
+            <form id="crear-promocion-form">
+                <label for="nombre">Nombre de la promoción:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="fecha-inicio">Fecha de inicio:</label>
+                <input type="date" id="fecha-inicio" name="fecha-inicio" required>
+                <label for="fecha-fin">Fecha de finalización:</label>
+                <input type="date" id="fecha-fin" name="fecha-fin" required>
+                <label for="productos">Productos incluidos:</label>
+                <input type="text" id="productos" name="productos" required>
+                <label for="descuento">Descuento (%):</label>
+                <input type="number" id="descuento" name="descuento" required>
+                <button type="submit">Crear Promoción</button>
+            </form>
+        </section>
+
+        <section id="modificar-promocion">
+            <h2>Modificar Promoción</h2>
+            <form>
+                <!-- Campos para seleccionar y modificar promociones existentes -->
+                <button type="submit">Modificar Promoción</button>
+            </form>
+        </section>
+
+        <section id="eliminar-promocion">
+            <h2>Eliminar Promoción</h2>
+            <form id="eliminar-promocion-form">
+                <!-- Campos para seleccionar y eliminar promociones existentes -->
+                <button type="submit">Eliminar Promoción</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Derechos de autor © 2024 Restaurante XYZ. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('crear-promocion-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que se envíe el formulario
+
+            alert('Promoción cargada');
+            // Aquí podrías agregar código adicional para procesar el formulario, como enviar datos a un servidor
+        });
+
+        document.getElementById('eliminar-promocion-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que se envíe el formulario
+
+            alert('Promoción eliminada');
+            // Aquí podrías agregar código adicional para procesar el formulario, como enviar datos a un servidor
+        });
+    </script>
+
+<link rel="stylesheet" href="sss.css">
+
+</body>
+</html>
+

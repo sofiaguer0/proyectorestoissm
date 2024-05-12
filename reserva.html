@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Reservas</title>
+    <link rel="stylesheet" href="cssreserva.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gestión de Reservas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Reservas Pendientes</h2>
+            <table id="tabla-reservas">
+                <thead>
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Fecha</th>
+                        <th>Mesa</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>2024-05-15</td>
+                        <td>Mesa 1</td>
+                        <td>
+                            <button onclick="confirmarReserva()">Confirmar</button>
+                            <button onclick="cancelarReserva()">Cancelar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>María González</td>
+                        <td>2024-05-17</td>
+                        <td>Mesa 2</td>
+                        <td>
+                            <button onclick="confirmarReserva()">Confirmar</button>
+                            <button onclick="cancelarReserva()">Cancelar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section>
+            <h2>Registro Histórico de Reservas</h2>
+            <ul>
+                <li>Reserva confirmada para Juan Pérez en Mesa 1 el 14 de mayo de 2024.</li>
+                <li>Reserva cancelada para María González en Mesa 2 el 12 de mayo de 2024.</li>
+                <li>Reserva modificada para Ana López en Mesa 3 el 10 de mayo de 2024.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Restaurante XYZ</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #cacaca;
+    margin: 0 auto;
+    padding: 0 auto;
+    color: #000000;
+}
+
+header{
+  background-color: #2a363b;
+  padding: 1%;
+  color: #ffffff;
+  text-align: left;
+}
+
+#menu ul {
+  width: auto;
+  margin: auto;
+  padding: 2%;
+  background-color: #000000;
+  display: flex;
+  justify-content: center
+}
+
+#menu li {
+  display:flex;
+}
+
+#menu a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+
+#nosotros, #horario{
+  padding: 20px;
+  text-align: center;
+}
+
+#nosotros{
+  font-size: 25px;
+  color: #586875;
+  text-align: center;
+}
+
+#horario{
+  font-size: 25px;
+  color: #586875;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 1%;
+  width: 25%;
+  height: 25%;
+  margin: auto;
+}
+
+#nosotros p, #horario p{
+  color: #000;
+  text-align:center;
+  font-size: 20px;
+}
+
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 1%;
+  margin-top: 5%;
+}
+
+
+
+

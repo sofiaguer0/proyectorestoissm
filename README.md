@@ -4,6 +4,7 @@ Historias de Usuario Seleccionadas: ???
 
 Daily: ???
 
+INSTRUCCIONES PARA EL EQUIPO:
 
 
 

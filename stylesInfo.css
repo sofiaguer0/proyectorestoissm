@@ -32,40 +32,49 @@ header{
   color: #fff;
 }
 
-#nosotros, #horario{
-  padding: 20px;
+#ubicacion {
+  padding: 55px;
+  font-size: 25px;
+  text-align: center;
+  color: #586875;
+}
+
+#contacto {
+  padding: 55px;
+  font-size: 25px;
+  text-align: center;
+  color: #586875;
   text-align: center;
 }
 
-#nosotros{
+#horario {
+  padding: 55px;
   font-size: 25px;
   color: #586875;
   text-align: center;
 }
 
-#horario{
-  font-size: 25px;
-  color: #586875;
-  text-align: center;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-  border-radius: 1%;
-  width: 25%;
-  height: 25%;
-  margin: auto;
-}
-
-#nosotros p, #horario p{
+#ubicacion p, #contacto p, #horario p{
   color: #000;
-  text-align:center;
   font-size: 20px;
 }
 
+#ubicacion h2, #contacto h2, #horario h2{
+  color: #586875;  
+  font-size: 35px;
+  text-align: center;
+}
+
+#columnas{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 footer {
   background-color: #000000;
   color: #ffffff;
   text-align: center;
-  padding: 1%;
+  padding: 2%;
   margin-top: 5%;
 }
 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agregarcss.css">
+    <title>Menú del Restaurante</title>
+</head>
+<body>
+    <h1>Menú del Restaurante</h1>
+
+    <h2>Platos Disponibles</h2>
+    <table id="menu-table">
+        <tr>
+            <th>Nombre del Plato</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Nombre del Plato 1</td>
+            <td>Descripción del Plato 1</td>
+            <td>$X</td>
+        </tr>
+        <tr>
+            <td>Nombre del Plato 2</td>
+            <td>Descripción del Plato 2</td>
+            <td>$X</td>
+        </tr>
+        <tr>
+            <td>Nombre del Plato 3</td>
+            <td>Descripción del Plato 3</td>
+            <td>$X</td>
+        </tr>
+        <!-- Aquí puedes incluir más platos del menú con su descripción -->
+    </table>
+
+    <h2>Agregar Nuevo Plato</h2>
+    <form id="add-form">
+        <label for="nombre-plato">Nombre del Plato:</label><br>
+        <input type="text" id="nombre-plato" name="nombre-plato"><br>
+        <label for="descripcion-plato">Descripción:</label><br>
+        <textarea id="descripcion-plato" name="descripcion-plato"></textarea><br>
+        <label for="precio-plato">Precio:</label><br>
+        <input type="number" id="precio-plato" name="precio-plato"><br><br>
+        <label for="imagen-plato">Imagen:</label><br>
+        <input type="file" id="imagen-plato" name="imagen-plato"><br><br>
+        <button type="submit">Agregar Plato</button>
+    </form>
+
+    <script>
+        // Aquí podrías agregar scripts para manejar la lógica de agregar nuevos platos al menú
+    </script>
+</body>
+</html>

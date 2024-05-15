@@ -18,18 +18,20 @@
     </ul>
 
     <h2>Agregar Nuevo Plato</h2>
-    <form id="add-form">
+    <form id="add-form" enctype="multipart/form-data">
         <label for="nombre-plato">Nombre del Plato:</label><br>
         <input type="text" id="nombre-plato" name="nombre-plato"><br>
         <label for="descripcion-plato">Descripción:</label><br>
         <textarea id="descripcion-plato" name="descripcion-plato"></textarea><br>
         <label for="precio-plato">Precio:</label><br>
-        <input type="number" id="precio-plato" name="precio-plato"><br><br>
+        <input type="number" id="precio-plato" name="precio-plato"><br>
+        <label for="imagen-plato">Imagen:</label><br>
+        <input type="file" id="imagen-plato" name="imagen-plato"><br><br>
         <button type="submit">Agregar Plato</button>
     </form>
 
     <h2>Modificar o Eliminar Plato</h2>
-    <form id="modify-form">
+    <form id="modify-form" enctype="multipart/form-data">
         <label for="select-plato">Seleccionar Plato:</label><br>
         <select id="select-plato" name="select-plato">
             <option value="1">Nombre del Plato 1</option>
@@ -42,7 +44,9 @@
         <label for="nueva-descripcion-plato">Nueva Descripción:</label><br>
         <textarea id="nueva-descripcion-plato" name="nueva-descripcion-plato"></textarea><br>
         <label for="nuevo-precio-plato">Nuevo Precio:</label><br>
-        <input type="number" id="nuevo-precio-plato" name="nuevo-precio-plato"><br><br>
+        <input type="number" id="nuevo-precio-plato" name="nuevo-precio-plato"><br>
+        <label for="nueva-imagen-plato">Nueva Imagen:</label><br>
+        <input type="file" id="nueva-imagen-plato" name="nueva-imagen-plato"><br><br>
         <button type="submit">Modificar Plato</button>
         <button type="button" id="delete-btn">Eliminar Plato</button>
     </form>

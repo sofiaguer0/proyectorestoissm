@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #020c3a;
+    background-color: #557A95;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -47,7 +47,7 @@ input[type="number"] {
 button {
     padding: 10px;
     margin-top: 10px;
-    background-color: #020c3a;
+    background-color: #7395AE;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -59,7 +59,7 @@ button:hover {
 }
 
 footer {
-    background-color: #020c3a;
+    background-color: #557A95;
     color: #fff;
     padding: 10px 20px;
     position: fixed;

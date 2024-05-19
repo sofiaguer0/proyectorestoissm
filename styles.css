@@ -7,10 +7,10 @@ body {
 }
 
 header {
-    background-color: #343a40;
+    background-color: #557A95;
     color: #E0E0E0;
     text-align: center;
-    padding: 20px 0;
+    padding: 65px 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -91,4 +91,16 @@ nav ul li a:hover {
 .price {
     font-weight: bold;
     color: #007bff;
+}
+
+
+footer {
+    background-color: #557A95;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
 }

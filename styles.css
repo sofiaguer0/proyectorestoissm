@@ -1,11 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
-}
+    background-image: url('Imagenes/background.jpg'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Para ajustar la imagen al tamaño de la ventana del navegador */
+    background-position: center; /* Para centrar la imagen */
+    background-repeat: no-repeat; /* Para evitar que la imagen se repita */
+  }
 
+<<<<<<< HEAD
 header {
     background-color: #557A95;
     color: #E0E0E0;
@@ -75,24 +75,103 @@ nav ul li a:hover {
 }
 
 .item-details {
+=======
+  h1{
+    text-align: center;
+    color: #ffffff;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .card {
+    margin: 10px;
+    position: relative;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+>>>>>>> 7e11cee5d59f267cc4debd2a49dc84fcd67e1176
     overflow: hidden;
-}
-
-.item-details h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #007bff;
-}
-
-.item-details p {
+    perspective: 1000px;
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.233); /* Cambia el color de fondo aquí */
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Cambia el color de la sombra aquí */
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
     margin: 0;
+    padding-left: 5px;
+    font-size: 24px;
+    color: #000000; /* Cambia el color del título aquí */
+    font-weight: 700;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #000000; /* Cambia el color del texto aquí */
+    line-height: 1.4;
+  }
+  
+
+ /* Botones */
+
+ button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  background: #08f;
+  color: #fff;
 }
 
-.price {
-    font-weight: bold;
-    color: #007bff;
+svg {
+  margin: 0 0 0 10px;
 }
 
+<<<<<<< HEAD
 
 footer {
     background-color: #557A95;
@@ -103,4 +182,22 @@ footer {
     width: 100%;
     text-align: center;
 
+=======
+button:hover svg {
+  margin: 0 0 0 25px;
+  transition: 0.3s;
+}
+
+button:not(:hover) svg {
+  transition: 0.3s;
+}
+
+button:active {
+  transform: scale(0.9, 0.9);
+  transition: 200ms;
+}
+
+button:not(:active) {
+  transition: 200ms;
+>>>>>>> 7e11cee5d59f267cc4debd2a49dc84fcd67e1176
 }

@@ -1,203 +1,48 @@
 body {
-    background-image: url('Imagenes/background.jpg'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta de tu imagen */
-    background-size: cover; /* Para ajustar la imagen al tamaño de la ventana del navegador */
-    background-position: center; /* Para centrar la imagen */
-    background-repeat: no-repeat; /* Para evitar que la imagen se repita */
-  }
-
-<<<<<<< HEAD
-header {
-    background-color: #557A95;
-    color: #E0E0E0;
-    text-align: center;
-    padding: 65px 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-header h1 {
-    font-size: 32px;
-    margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h2 {
     text-align: center;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #007bff;
-}
-
-.menu-section {
-    padding: 40px 20px;
-}
-
-.menu-section h2 {
-    color: #343a40;
-    border-bottom: 2px solid #343a40;
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.menu-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.menu-item {
-    background-color: #fff;
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.menu-item img {
-    max-width: 100px;
-    border-radius: 5px;
-    float: left;
-    margin-right: 20px;
-}
-
-.item-details {
-=======
-  h1{
-    text-align: center;
-    color: #ffffff;
-  }
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .card {
-    margin: 10px;
-    position: relative;
-    width: 350px;
-    height: 200px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
->>>>>>> 7e11cee5d59f267cc4debd2a49dc84fcd67e1176
-    overflow: hidden;
-    perspective: 1000px;
-    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .card .image {
-    position: absolute;
-    top: 0;
-    left: 0;
+table {
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .card__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.233); /* Cambia el color de fondo aquí */
-    transform: rotateX(-90deg);
-    transform-origin: bottom;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Cambia el color de la sombra aquí */
-  }
-  
-  .card:hover .card__content {
-    transform: rotateX(0deg);
-  }
-  
-  .card__title {
-    margin: 0;
-    padding-left: 5px;
-    font-size: 24px;
-    color: #000000; /* Cambia el color del título aquí */
-    font-weight: 700;
-  }
-  
-  .card__description {
-    margin: 10px 0 0;
-    font-size: 14px;
-    color: #000000; /* Cambia el color del texto aquí */
-    line-height: 1.4;
-  }
-  
-
- /* Botones */
-
- button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 50px;
-  border-radius: 50px;
-  border: 0;
-  outline: 0;
-  font-size: 18px;
-  background: #08f;
-  color: #fff;
+    border-collapse: collapse;
 }
 
-svg {
-  margin: 0 0 0 10px;
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
 }
 
-<<<<<<< HEAD
-
-footer {
-    background-color: #557A95;
-    color: #fff;
-    padding: 10px 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-
-=======
-button:hover svg {
-  margin: 0 0 0 25px;
-  transition: 0.3s;
+th {
+    background-color: #4CAF50;
+    color: white;
 }
 
-button:not(:hover) svg {
-  transition: 0.3s;
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
-button:active {
-  transform: scale(0.9, 0.9);
-  transition: 200ms;
+.action-buttons button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
 }
 
-button:not(:active) {
-  transition: 200ms;
->>>>>>> 7e11cee5d59f267cc4debd2a49dc84fcd67e1176
+.action-buttons button:hover {
+    background-color: #45a049;
 }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Roles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Administración de Roles</h2>
+        <div id="addUserForm">
+            <label for="userName">Nombre:</label>
+            <input type="text" id="userName" name="userName" required>
+            <label for="userRole">Rol:</label>
+            <select id="userRole" name="userRole" required>
+                <option value="">Seleccionar Rol</option>
+                <option value="Camarero">Camarero</option>
+                <option value="Cocinero">Cocinero</option>
+                <option value="Gerente">Gerente</option>
+                <option value="Cajero">Cajero</option>
+            </select>
+            <button onclick="addUser()">Agregar Usuario</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Rol Actual</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="userList">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
